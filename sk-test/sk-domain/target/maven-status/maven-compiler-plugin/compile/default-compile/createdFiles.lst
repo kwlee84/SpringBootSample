@@ -1,0 +1,6 @@
+sk\test\domain\store\UserStore.class
+sk\test\domain\service\TestServiceLycler.class
+sk\test\domain\entity\User.class
+sk\test\domain\logic\UserServiceLogic.class
+sk\test\domain\service\UserService.class
+sk\test\domain\store\TestStoreLycler.class
