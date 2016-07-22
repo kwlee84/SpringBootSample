@@ -13,8 +13,8 @@
   
   <modules>
   	<module>sample-domain</module>
-  	<module>sample-service</module>
   	<module>sample-store</module>
+  	<module>sample-service</module>
   </modules>
   
   <properties>
