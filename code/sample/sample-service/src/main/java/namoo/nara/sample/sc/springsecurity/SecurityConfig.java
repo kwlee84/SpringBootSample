@@ -23,7 +23,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     protected void configure(HttpSecurity http) throws Exception {
         //
         http.authorizeRequests()
-                .anyRequest().fullyAuthenticated()          //모든 request는 권한을 필요로 함
+                .anyRequest().fullyAuthenticated()
             .and()
             .formLogin()
                 .usernameParameter("username")
@@ -37,40 +37,9 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
             .logout()
                 .logoutUrl("/logout")
                 .deleteCookies("remember-me")
-                .logoutSuccessUrl("/login")
-                .permitAll();
-            /*.and()
-            .csrf()
-                .csrfTokenRepository(csrfTokenRepository())
-            .and()
-            .addFilterAfter(csrfHeaderFilter(), CsrfFilter.class)
-            .rememberMe();*/
+                .logoutSuccessUrl("/login");
     }
     
-    /*private Filter csrfHeaderFilter() {
-        return new OncePerRequestFilter() {
-            @Override
-            protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain filterChain) throws ServletException, IOException {
-                CsrfToken csrf = (CsrfToken) request.getAttribute(CsrfToken.class.getName());
-                if (csrf != null) {
-                    Cookie cookie = WebUtils.getCookie(request, "XSRF-TOKEN");
-                    String token = csrf.getToken();
-                    if (cookie == null || token != null && !token.equals(cookie.getValue())) {
-                        cookie = new Cookie("XSRF-TOKEN", token);
-                        cookie.setPath("/");
-                        response.addCookie(cookie);
-                    }
-                }
-                filterChain.doFilter(request, response);
-            }
-        };
-    }
-    
-    private CsrfTokenRepository csrfTokenRepository() {
-        HttpSessionCsrfTokenRepository repository = new HttpSessionCsrfTokenRepository();
-        repository.setHeaderName("XSRF-TOKEN");
-        return repository;
-    }*/
     
     @Bean
     public PasswordEncoder createPasswordEncoder() {
@@ -80,7 +49,6 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     @Autowired
     public void configureGlobal(AuthenticationManagerBuilder auth) throws Exception {
         //
-        //auth.userDetailsService(userDetailsService).passwordEncoder(createPasswordEncoder());
         auth.userDetailsService(userDetailsService);
     }
 }
