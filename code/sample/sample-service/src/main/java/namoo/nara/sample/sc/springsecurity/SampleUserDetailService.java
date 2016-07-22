@@ -9,7 +9,7 @@ import namoo.nara.sample.entity.User;
 
 
 @Component
-public class NaraUserDetailService implements UserDetailsService {
+public class SampleUserDetailService implements UserDetailsService {
     //
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {

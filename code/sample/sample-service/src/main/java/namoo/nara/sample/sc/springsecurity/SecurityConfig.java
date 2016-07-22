@@ -23,7 +23,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     protected void configure(HttpSecurity http) throws Exception {
         //
         http.authorizeRequests()
-                .anyRequest().fullyAuthenticated()          //모든 request는 권한을 필요로 함
+                .anyRequest().fullyAuthenticated()
             .and()
             .formLogin()
                 .usernameParameter("username")
@@ -37,8 +37,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
             .logout()
                 .logoutUrl("/logout")
                 .deleteCookies("remember-me")
-                .logoutSuccessUrl("/login")
-                .permitAll();
+                .logoutSuccessUrl("/login");
     }
     
     
