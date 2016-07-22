@@ -6,4 +6,12 @@
     <version>0.0.1-SNAPSHOT</version>
   </parent>
   <artifactId>sample-store</artifactId>
+  
+  <dependencies>
+    <dependency>
+      <groupId>namoo.nara.sk</groupId>
+      <artifactId>sample-domain</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+  </dependencies>
 </project>
