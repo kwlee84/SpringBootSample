@@ -6,8 +6,6 @@ import java.util.stream.Collectors;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 import namoo.nara.entity.User;
@@ -16,8 +14,7 @@ import namoo.nara.entity.User;
 public class UserDoc implements Serializable {
 
 	@Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-	private Long id;
+	private String id;
     
 	@Column(name = "name", nullable = false)
 	private String name;
@@ -54,11 +51,12 @@ public class UserDoc implements Serializable {
                 .collect(Collectors.toList());
     }
 
-	public Long getId() {
-		return id;
-	}
 
-	public String getName() {
+	public String getId() {
+        return id;
+    }
+
+    public String getName() {
 		return name;
 	}
 
@@ -74,8 +72,7 @@ public class UserDoc implements Serializable {
 		this.age = age;
 	}
 
-	public void setId(Long id) {
-		this.id = id;
-	}
-
+    public void setId(String id) {
+        this.id = id;
+    }
 }

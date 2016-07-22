@@ -10,7 +10,7 @@ public interface UserService {
 
 	public void modify(User user);
 
-	public User find(Long id);
+	public User find(String id);
 
 	public void delete(Long id);
 

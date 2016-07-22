@@ -5,5 +5,5 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 import namoo.nara.da.mysql.document.UserDoc;
 
-public interface UserRepository extends JpaRepository<UserDoc, Long>{
+public interface UserRepository extends JpaRepository<UserDoc, String>{
 }

@@ -9,7 +9,7 @@ import namoo.nara.store.SampleStoreLycler;
 import namoo.nara.store.UserStore;
 
 public class UserServiceLogic implements UserService {
-	
+	//
 	private UserStore userStore;
 	
 	public UserServiceLogic(SampleStoreLycler sampleStoreLycler){
@@ -29,7 +29,7 @@ public class UserServiceLogic implements UserService {
 	}
 
 	@Override
-	public User find(Long id) {
+	public User find(String id) {
 		return userStore.retrieve(id);
 	}
 

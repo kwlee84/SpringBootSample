@@ -25,9 +25,11 @@ public class UserMysqlStore implements UserStore {
 	}
 
 	@Override
-	public User retrieve(Long id) {
-		// TODO Auto-generated method stub
-		return userRepository.findOne(id).toDomain();
+	public User retrieve(String id) {
+		//
+	    //TODO
+		//return userRepository.findOne(id).toDomain();
+	    return User.getExample();
 	}
 
 	@Override

@@ -8,7 +8,7 @@ public interface UserStore {
 
 	public void create(User user);
 
-	public User retrieve(Long id);
+	public User retrieve(String id);
 
 	List<User> retrieveAll();
 }

@@ -22,7 +22,7 @@ public class UserMysqlStoreTest {
 
 	@Test
 	public void createTest() {
-		User user = new User(new Long(999), "hjkwon", new Integer(30));
+		User user = new User("9999", "hjkwon", new Integer(30));
 		userMysqlStore.create(user);
 	}
 

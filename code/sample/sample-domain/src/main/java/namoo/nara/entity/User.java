@@ -1,25 +1,38 @@
 package namoo.nara.entity;
 
 public class User {
-	private Long id;
+    //
+	private String id;
 	private String name;
+	private String password;
 	private Integer age;
 	
 	public User() {
 		
 	}
-	public User(Long id, String name, Integer age) {
+	public User(String id, String name, Integer age) {
 		this.id = id;
 		this.name = name;
 		this.age = age;
 	}
-	public Long getId() {
-		return id;
+	
+	public static User getExample() {
+	    //
+	    User user = new User();
+	    user.setId("kwlee");
+	    user.setName("이기왕");
+	    user.setAge(33);
+	    user.setPassword("123");
+	    return user;
 	}
-	public void setId(Long id) {
-		this.id = id;
-	}
-	public String getName() {
+	
+	public String getId() {
+        return id;
+    }
+    public void setId(String id) {
+        this.id = id;
+    }
+    public String getName() {
 		return name;
 	}
 	public void setName(String name) {
@@ -31,6 +44,13 @@ public class User {
 	public void setAge(Integer age) {
 		this.age = age;
 	}
+    public String getPassword() {
+        return password;
+    }
+    public void setPassword(String password) {
+        this.password = password;
+    }
+	
 	
 	
 }

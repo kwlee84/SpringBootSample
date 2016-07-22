@@ -1,25 +1,26 @@
 package namoo.nara.sample.sc.springsecurity;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Component;
 
-import namoo.nara.sample.entity.User;
+import namoo.nara.entity.User;
+import namoo.nara.service.UserService;
 
 
 @Component
 public class SampleUserDetailService implements UserDetailsService {
     //
+    @Autowired
+    private UserService userService;
+    
     @Override
-    public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
+    public UserDetails loadUserByUsername(String id) throws UsernameNotFoundException {
         //
-        //find user
-        User user = new User();
-        user.setName(username);
-        user.setUsid("kwlee");
-        user.setPassword("123123");
-        
+        User user = userService.find(id);
+        //TODO
         return new LoginUser(user);
     }
 

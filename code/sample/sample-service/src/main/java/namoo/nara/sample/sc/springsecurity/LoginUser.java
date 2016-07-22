@@ -2,16 +2,14 @@ package namoo.nara.sample.sc.springsecurity;
 
 import java.util.Collection;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
-import org.springframework.security.crypto.password.PasswordEncoder;
 
-import namoo.nara.sample.entity.User;
+import namoo.nara.entity.User;
 
 
 public class LoginUser implements UserDetails {
-
+    //
     /**  */
     private static final long serialVersionUID = -2595715921664866768L;
 
@@ -25,6 +23,7 @@ public class LoginUser implements UserDetails {
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
         //
+      //TODO
         return null;
     }
 
@@ -43,24 +42,28 @@ public class LoginUser implements UserDetails {
     @Override
     public boolean isAccountNonExpired() {
         //
+      //TODO
         return true;
     }
 
     @Override
     public boolean isAccountNonLocked() {
         //
+      //TODO
         return true;
     }
 
     @Override
     public boolean isCredentialsNonExpired() {
         //
+        //TODO
         return true;
     }
 
     @Override
     public boolean isEnabled() {
         //
+      //TODO
         return true;
     }
 

@@ -11,7 +11,7 @@ import namoo.nara.store.SampleStoreLycler;
 @Service
 @Transactional(propagation = Propagation.REQUIRED)
 public class UserSpringService extends UserServiceLogic{
-
+    //
 	@Autowired
 	public UserSpringService(SampleStoreLycler sampleStoreLycler) {
 		super(sampleStoreLycler);
