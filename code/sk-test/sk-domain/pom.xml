@@ -12,5 +12,6 @@
 	</parent>
 	
 	<artifactId>sk-domain</artifactId>
+	<packaging>jar</packaging>
 
 </project>
