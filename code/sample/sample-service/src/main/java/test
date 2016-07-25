@@ -20,11 +20,4 @@ public class UserSpringService extends UserServiceLogic{
 	public UserSpringService(SampleStoreLycler sampleStoreLycler) {
 		super(sampleStoreLycler);
 	}
-<<<<<<< HEAD
-=======
-	@Autowired
-	public UserSpringService(SampleStoreLycler sampleStoreLycler) {
-		super(sampleStoreLycler);
-	}12523423
->>>>>>> branch 'master' of https://github.com/kwlee84/SpringBootSample.git
 }
