@@ -23,5 +23,5 @@ public class UserSpringService extends UserServiceLogic{
 	@Autowired
 	public UserSpringService(SampleStoreLycler sampleStoreLycler) {
 		super(sampleStoreLycler);
-	}123123
+	}123123123
 }
