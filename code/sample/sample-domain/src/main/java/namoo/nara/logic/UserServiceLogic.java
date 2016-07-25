@@ -18,8 +18,8 @@ public class UserServiceLogic implements UserService {
 
 	@Override
 	public void create(User user) {
+	    //
 		userStore.create(user);
-
 	}
 
 	@Override
@@ -30,6 +30,7 @@ public class UserServiceLogic implements UserService {
 
 	@Override
 	public User find(String id) {
+	    //
 		return userStore.retrieve(id);
 	}
 

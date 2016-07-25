@@ -17,6 +17,7 @@ import namoo.nara.entity.User;
 @ComponentScan(basePackages = "namoo.nara.da.mysql")
 @DirtiesContext(classMode= DirtiesContext.ClassMode.AFTER_EACH_TEST_METHOD)
 public class UserMysqlStoreTest {
+    //
 	@Autowired
 	private UserMysqlStore userMysqlStore;
 

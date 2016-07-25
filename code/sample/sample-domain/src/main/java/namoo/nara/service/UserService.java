@@ -5,7 +5,7 @@ import java.util.List;
 import namoo.nara.entity.User;
 
 public interface UserService {
-
+    //
 	public void create(User user);
 
 	public void modify(User user);
