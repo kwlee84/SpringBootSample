@@ -6,4 +6,5 @@
     <version>0.0.1-SNAPSHOT</version>
   </parent>
   <artifactId>sample-domain</artifactId>
+  <version>${parent.version}</version>
 </project>
