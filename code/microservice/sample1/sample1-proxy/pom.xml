@@ -5,12 +5,11 @@
     <artifactId>sample1</artifactId>
     <version>0.0.1-SNAPSHOT</version>
   </parent>
-  <artifactId>sample1-domain</artifactId>
-  
+  <artifactId>sample1-proxy</artifactId>
   <dependencies>
     <dependency>
-      <groupId>namoo.io</groupId>
-      <artifactId>sample2-client</artifactId>
+      <groupId>namoo.nara</groupId>
+      <artifactId>sample1-domain</artifactId>
       <version>0.0.1-SNAPSHOT</version>
     </dependency>
   </dependencies>

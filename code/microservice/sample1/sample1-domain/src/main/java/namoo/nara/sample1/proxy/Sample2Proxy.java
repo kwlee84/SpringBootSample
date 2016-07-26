@@ -1,7 +1,8 @@
 package namoo.nara.sample1.proxy;
 
+import namoo.io.entity.Account;
+
 public interface Sample2Proxy {
     //
-    //TODO 
-    void retrieveAccountByUserID();
+    Account retrieveAccountByUserID(String usid);
 }
