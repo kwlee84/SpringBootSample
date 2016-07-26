@@ -10,8 +10,8 @@
 
   <dependencies>
     <dependency>
-      <groupId>namoo.nara.sk</groupId>
-      <artifactId>sample-domain</artifactId>
+      <groupId>namoo.nara</groupId>
+      <artifactId>sample1-domain</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>

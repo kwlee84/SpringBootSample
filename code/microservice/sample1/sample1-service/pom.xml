@@ -11,8 +11,8 @@
 
   <dependencies>
     <dependency>
-      <groupId>namoo.nara.sk</groupId>
-      <artifactId>sample-store</artifactId>
+      <groupId>namoo.nara</groupId>
+      <artifactId>sample1-store</artifactId>
       <version>${parent.version}</version>
     </dependency>
     <dependency>
@@ -48,7 +48,6 @@
         </configuration>
       </plugin>
       <plugin>
-
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-maven-plugin</artifactId>
         <executions>
