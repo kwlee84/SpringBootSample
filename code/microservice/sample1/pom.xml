@@ -8,6 +8,7 @@
     <module>sample1-domain</module>
     <module>sample1-store</module>
     <module>sample1-service</module>
+    <module>sample1-proxy</module>
   </modules>
   
   <properties>
