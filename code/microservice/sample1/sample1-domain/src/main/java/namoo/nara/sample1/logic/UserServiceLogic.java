@@ -5,14 +5,14 @@ import java.util.List;
 
 import namoo.nara.sample1.entity.User;
 import namoo.nara.sample1.service.UserService;
-import namoo.nara.sample1.store.SampleStoreLycler;
+import namoo.nara.sample1.store.Sample1StoreLycler;
 import namoo.nara.sample1.store.UserStore;
 
 public class UserServiceLogic implements UserService {
 	//
 	private UserStore userStore;
 	
-	public UserServiceLogic(SampleStoreLycler sampleStoreLycler){
+	public UserServiceLogic(Sample1StoreLycler sampleStoreLycler){
 		this.userStore = sampleStoreLycler.requestUserStore();
 	}
 
