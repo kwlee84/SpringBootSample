@@ -9,8 +9,8 @@
   	<module>sample2-domain</module>
   	<module>sample2-service</module>
   	<module>sample2-store</module>
-  	<!-- <module>sample2-adapter</module>
-  	<module>sample2-client</module> -->
+  	<module>sample2-adapter</module>
+  	<module>sample2-client</module>
   </modules>
   
   <properties>

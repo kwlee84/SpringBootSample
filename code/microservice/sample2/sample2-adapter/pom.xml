@@ -6,4 +6,12 @@
     <version>0.0.1-SNAPSHOT</version>
   </parent>
   <artifactId>sample2-adapter</artifactId>
+  
+  	<dependencies>
+        <dependency>
+            <groupId>namoo.io</groupId>
+            <artifactId>sample2-domain</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+    </dependencies>
 </project>

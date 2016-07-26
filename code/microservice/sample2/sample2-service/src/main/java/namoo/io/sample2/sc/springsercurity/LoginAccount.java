@@ -8,7 +8,6 @@ import namoo.io.entity.Account;
 
 public class LoginAccount implements UserDetails {
     //
-    /**  */
     private static final long serialVersionUID = -2595715921664866768L;
 
     private Account account; 

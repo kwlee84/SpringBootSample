@@ -1,6 +1,5 @@
 package namoo.io.da.mysql.document;
 
-import java.io.Serializable;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -8,6 +7,7 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
+
 import namoo.io.entity.Account;
 
 @Entity

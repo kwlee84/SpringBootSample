@@ -12,8 +12,8 @@ public class AccountServiceLogic implements AccountService {
 	//
 	private AccountStore accountStore;
 	
-	public AccountServiceLogic(Sample2StoreLycler sampleStoreLycler){
-		this.accountStore = sampleStoreLycler.requestAccountStore();
+	public AccountServiceLogic(Sample2StoreLycler sample2StoreLycler){
+		this.accountStore = sample2StoreLycler.requestAccountStore();
 	}
 
 	@Override

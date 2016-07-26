@@ -14,10 +14,10 @@ import namoo.io.entity.Account;
 @RunWith(SpringJUnit4ClassRunner.class)
 @SpringApplicationConfiguration(classes = AccountMysqlStoreTest.class)
 @EnableAutoConfiguration
-@ComponentScan(basePackages = "namoo.nara.da.mysql")
+@ComponentScan(basePackages = "namoo.io.da.mysql")
 @DirtiesContext(classMode= DirtiesContext.ClassMode.AFTER_EACH_TEST_METHOD)
 public class AccountMysqlStoreTest {
-    //
+   //
 	@Autowired
 	private AccountMysqlStore userMysqlStore;
 
