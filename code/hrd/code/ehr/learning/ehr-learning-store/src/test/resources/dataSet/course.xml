@@ -1,0 +1,7 @@
+<dataset>
+	<course_sequence course_domain="Course" sequence="3" />
+
+	<course usid="CS0001" title="객체지향 Java" edu_time="40.0" institue_name="KOSTA" start_day="2016.08.01" end_day="2016.08.05"/>
+	<course usid="CS0002" title="단위테스트 JUnit" edu_time="20.0" institue_name="KOSTA" start_day="2016.08.08" end_day="2016.08.12"/>
+	<course usid="CS0003" title="리눅스 쉘 프로그래밍" edu_time="60.0" institue_name="KOSTA" start_day="2016.08.15" end_day="2016.08.19"/>
+</dataset>

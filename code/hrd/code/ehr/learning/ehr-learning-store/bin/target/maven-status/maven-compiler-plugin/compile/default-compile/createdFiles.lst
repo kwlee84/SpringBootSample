@@ -1,0 +1,5 @@
+sk\ehr\learning\course\da\maria\document\sequence\CourseSequenceDoc.class
+sk\ehr\learning\course\da\maria\CourseMariaStore.class
+sk\ehr\learning\course\da\maria\CourseSequenceMariaStore.class
+sk\ehr\learning\course\da\maria\springdata\CourseMariaRepository.class
+sk\ehr\learning\course\da\maria\document\CourseDoc.class

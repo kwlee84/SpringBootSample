@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="sk.ehr.learning.course.da.maria.mybatis.mapper.CourseMapper">
+  
+  <resultMap type="sk.ehr.learning.course.domain.entity.Course" id="courseResultMap">
+    <id property="usid" column="usid" />
+    <result property="eduTime" column="edu_time"/>
+    <result property="endDay" column="end_day"/>
+    <result property="institueName" column="institue_name"/>
+    <result property="startDay" column="start_day"/>
+    <result property="title" column="title"/>
+  </resultMap>
+  
+  <select id="selectCourse" resultMap="courseResultMap">
+  	select * from course where usid=#{usid}
+  </select>
+  
+  <insert id="insertCourse">
+    insert into course (
+      usid, 
+      edu_time, 
+      end_day, 
+      institue_name, 
+      start_day, 
+      title
+    ) values (
+      #{course.usid},
+      #{course.eduTime},
+      #{course.endDay},
+      #{course.institueName},
+      #{course.startDay},
+      #{course.title})
+  </insert>
+  
+  <update id="updateCourse">
+    update course set 
+      edu_time=#{course.eduTime}, 
+      end_day=#{course.endDay}, 
+      institue_name=#{course.institueName}, 
+      start_day=#{course.startDay}, 
+      title=#{course.title} 
+    where 
+    	usid=#{course.usid}
+  </update>
+  
+  <delete id="deleteCourse">
+    delete from course where usid = #{usid}
+  </delete>
+  
+  <select id="selectAllCourses" resultMap="courseResultMap">
+    select * from course
+  </select>
+</mapper> 
